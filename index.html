@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume Builder By Munawar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="path/to/your/typescript.js" defer></script>
+
+</head>
+<body>
+    <h1>Milestone 4 Editable Resume Builder By Munawar</h1>
+    <form id="resume" action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" required><br>
+
+            <label for="profilePicture">Profile Picture:</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education</label>
+            <textarea id="education" name="education" rows="4" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="experience">Experience</label>
+            <textarea id="experience" name="experience" rows="4" required></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skill">Skills</label>
+            <textarea id="skill" name="skill" rows="4" required></textarea><br>
+        </fieldset>
+
+        <button type="button" id="generateResume">Generate Resume</button>
+
+    </form>
+
+    <!-- Resume Preview Section -->
+    <div id="resumePreview" style="display: none;">
+        <h2>Resume Preview</h2>
+        <p><strong>Name:</strong> <span id="displayName"></span></p>
+        <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+        <p><strong>Phone:</strong> <span id="displayPhone"></span></p>
+        <img id="displayProfilePicture" class="profilePicture" alt="Profile Picture" />
+        <p><strong>Education:</strong> <span id="displayEducation"></span></p>
+        <p><strong>Experience:</strong> <span id="displayExperience"></span></p>
+        <p><strong>Skills:</strong> <span id="displaySkills"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
